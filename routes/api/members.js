@@ -14,7 +14,7 @@ router.get('/:id', (req, res) => {
 })
 
 
-//Create Member
+//This route Creates a Member
 router.post('/', (req, res) => {
     const newMember = {
         id: uuid.v4(),
@@ -30,8 +30,5 @@ router.post('/', (req, res) => {
     members.push(newMember);
     res.json(members)
 })
-
-//Update Member
-
 
 module.exports = router;
